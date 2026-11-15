@@ -1,20 +1,247 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
   </head>
+
   <body class="page">
-<header class="header">
-  <h1 class="header__title">&lt;закрывающий тег&gt;</h1>
-  <p class="header__subtitle">история одного проекта</p>
-</header>    <main></main>
+    <svg class="svg-symbols" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-floppy" viewBox="0 0 21 21">
+        <path d="M3 1H16L20 5V19H1V1H3Z" fill="none" stroke="currentColor"/>
+        <path d="M5 1V7H15V1" fill="none" stroke="currentColor"/>
+        <path d="M5 19V11H16V19" fill="none" stroke="currentColor"/>
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <a class="header__logo" href="#">ЗАКРЫВАЮЩИЙ ТЕГ</a>
+      <h1 class="header__title">&lt;закрывающий тег&gt;</h1>
+      <p class="header__subtitle">история одного проекта</p>
+    </header>
+
+    <main class="main">
+      <section class="cards" aria-label="Карточки проекта">
+
+        <article class="card">
+          <h2 class="card__title">Начало пути</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-brightness" src="./images/card1.jpg" alt="Первый этап работы над проектом">
+            <span class="card__label">&lt;старт&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>Каждый большой проект начинается с маленького шага. Сначала кажется, что впереди слишком много неизвестного.</p>
+            <p>Но именно с этого момента начинается настоящее обучение.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Первые ошибки</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-contrast" src="./images/card2.jpg" alt="Рабочий процесс">
+            <span class="card__label">&lt;ошибки&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>Ошибки — часть разработки. Иногда одна пропущенная скобка может заставить искать проблему целый час.</p>
+            <p>Главное — научиться находить и исправлять их.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Новые знания</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-saturate" src="./images/card3.jpg" alt="Изучение новых технологий">
+            <span class="card__label">&lt;обучение&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>С каждым новым заданием появляется больше уверенности. Постепенно сложные вещи становятся понятнее.</p>
+            <p>Практика помогает закрепить теорию.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Работа с кодом</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-sepia" src="./images/card4.jpg" alt="Работа с программным кодом">
+            <span class="card__label">&lt;код&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>Код становится понятнее, когда начинаешь видеть связь между отдельными элементами.</p>
+            <p>Каждая новая задача развивает навык решения проблем.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Сложные моменты</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-blur" src="./images/card5.jpg" alt="Непростой этап проекта">
+            <span class="card__label">&lt;трудности&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>Не всё получается с первого раза. Иногда приходится возвращаться к уже пройденным темам.</p>
+            <p>Это нормально: важно продолжать двигаться вперёд.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Уверенность</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-hue" src="./images/card6.jpg" alt="Продвижение в работе">
+            <span class="card__label">&lt;прогресс&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>То, что раньше казалось сложным, теперь получается быстрее. Видимый прогресс мотивирует.</p>
+            <p>Главное — не останавливаться на достигнутом.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Финальные штрихи</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-invert" src="./images/card7.jpg" alt="Завершение работы">
+            <span class="card__label">&lt;почти готово&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>Остаётся проверить детали, исправить недочёты и убедиться, что всё работает на разных устройствах.</p>
+            <p>Мелочи тоже имеют значение.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Результат</h2>
+          <div class="card__image-wrapper">
+            <img class="card__image filter-multiple" src="./images/card8.jpg" alt="Готовый результат проекта">
+            <span class="card__label">&lt;готово&gt;</span>
+          </div>
+          <div class="card__content">
+            <p>Проект завершён. За ним стоят ошибки, новые знания, практика и много проделанной работы.</p>
+            <p>Впереди — новые задачи и новые возможности.</p>
+            <div class="card__buttons">
+              <button class="like-button" type="button" aria-label="Поставить лайк">
+                <svg class="heart" viewBox="0 0 39 36" aria-hidden="true">
+                  <path class="heart__contour" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__core" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                  <path class="heart__main-body" d="M20 34S2 23 2 12C2 2 14-2 20 8 26-2 38 2 38 12 38 23 20 34 20 34Z"/>
+                </svg>
+              </button>
+              <button class="card__like-button" type="button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <button class="save-button" type="button">
+        <svg class="save-button__icon" aria-hidden="true">
+          <use href="#icon-floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </main>
+
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" aria-hidden="true">
+          <use href="#icon-floppy"></use>
+        </svg>
+        <p class="dialog__text">Вставлено в избранное!</p>
+      </div>
+      <button class="dialog__button" type="button">OK</button>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
