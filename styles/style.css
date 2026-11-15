@@ -311,3 +311,37 @@
 .dialog__button {
   inline-size: 100%;
 }
+
+@media (width <= 375px) {
+  .header {
+    min-block-size: 300px;
+    margin-block: 50px;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  .header__subtitle {
+    font-size: 12px;
+  }
+
+  .card__content {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .card__title {
+    font-size: 16px;
+  }
+
+  .card__label {
+    inset-block-start: 15px;
+    inset-inline-end: 10px;
+    font-size: 10px;
+  }
+
+  .save-button {
+    max-inline-size: calc(100% - 20px);
+  }
+}
