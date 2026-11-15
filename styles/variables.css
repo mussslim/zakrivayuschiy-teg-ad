@@ -1,3 +1,4 @@
+
 :root {
   --main-font: Inter, Arial, sans-serif;
   --accent-font: PressStart2P, fantasy;
@@ -20,4 +21,6 @@
       #e7e7e7 0.01%,
       #1a1a1a
     );
+
+  --content-width: clamp(320px, 100%, 700px);
 }
